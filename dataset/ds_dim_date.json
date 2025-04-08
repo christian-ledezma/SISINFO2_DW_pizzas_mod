@@ -1,0 +1,24 @@
+{
+	"name": "ds_dim_date",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_pizzas_bw",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DW"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "date",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DIM_DATE"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"name": "ds_dim_order",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_pizzas_bw",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DW"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "order_id",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DIM_ORDER"
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"name": "order_details_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sa_pizzas_csv",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "datos"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "orderdetails.csv",
+				"container": "pizzassales"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "order_details_id",
+				"type": "String"
+			},
+			{
+				"name": "order_id",
+				"type": "String"
+			},
+			{
+				"name": "pizza_id",
+				"type": "String"
+			},
+			{
+				"name": "quantity",
+				"type": "String"
+			}
+		]
+	}
+}
